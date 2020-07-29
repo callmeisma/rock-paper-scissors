@@ -52,12 +52,12 @@ document.addEventListener('click', function(e){
 
     if (playerScore >= 3) {
         document.getElementById('results').innerHTML = `Game Over, You\'ve Won! ${playerScore} - ${pcScore}.`;
-        btnRemover('controlls');
-        btnCreator('controlls', 'button', 'Play Again', 'replay')
-    }else if (pcScore >= 3) {
+        btnRemover('controls');
+        btnCreator('controls', 'button', 'Play Again', 'replay')
+    } else if (pcScore >= 3) {
         document.getElementById('results').innerHTML = `Game Over, You\'ve Lost! ${playerScore} - ${pcScore}.`;
-        btnRemover('controlls');
-        btnCreator('controlls', 'button', 'Play Again', 'replay')
+        btnRemover('controls');
+        btnCreator('controls', 'button', 'Play Again', 'replay')
     }
 
     if (e.target.id === 'replay') {
@@ -66,9 +66,9 @@ document.addEventListener('click', function(e){
         pcScore = 0;
         document.getElementById('playScore').innerHTML = playerScore;
         document.getElementById('compScore').innerHTML = pcScore;
-        btnRemover('controlls');
-        btnCreator('controlls', 'button', 'Rock', 'rock')
-        btnCreator('controlls', 'button', 'Paper', 'paper')
-        btnCreator('controlls', 'button', 'Scissors', 'scissors')
+        btnRemover('controls');
+        btnCreator('controls', 'button', 'Rock', 'rock')
+        btnCreator('controls', 'button', 'Paper', 'paper')
+        btnCreator('controls', 'button', 'Scissors', 'scissors')
     }
 })
