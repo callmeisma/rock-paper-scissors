@@ -1,2 +1,2 @@
 # rock-paper-scissors
-Simple implementation of grade-school classic “rock paper scissors” with HTML,CSS, and Javascript
+Simple Rock, Paper, Scissors game. Made with HTML,CSS, and Javascript.
